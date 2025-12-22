@@ -76,6 +76,11 @@ ul .active{
     border-radius: 5px;
 }
 
+/* бургер меню */
+.menu{
+    background: radial-gradient(circle,rgba(52, 194, 177, 1) 0%, rgba(145, 193, 193, 0.87) 100%);
+}
+
 
 /* Быстрый поиск */
 input {
