@@ -3,7 +3,7 @@ h1{
 }
 .strimer-section {
     font-size: 1.2rem;
-    background: url('/public/strimer-info/cover/cover-am.jpg') no-repeat center / cover;
+    background: url('../public/strimer-info/cover/cover-am.jpg') no-repeat center / cover;
 }
 
 .strimer-container{
