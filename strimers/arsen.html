@@ -16,17 +16,32 @@
             <img
               width="50px"
               height="50px"
-              src="/public/icon_white.png"
+              src="./public/icon_white.png"
               alt="logo" />
           </div>
           <nav>
             <ul>
-              <li><a href="/main.html">Популярные</a></li>
-              <li><a href="/catalog.html">Каталог</a></li>
-              <li><a href="/reg.html">Войти</a></li>
-              <li><a href="/profil.html">Личный кабинет</a></li>
+              <li><a href="./index.html">Популярные</a></li>
+              <li><a href="./catalog.html">Каталог</a></li>
+              <li class="active"><a href="./reg.html">Войти</a></li>
+              <li><a href="./profil.html">Личный кабинет</a></li>
             </ul>
           </nav>
+          <div class="burger-menu">
+            <input type="checkbox" id="menu-check" />
+            <label for="menu-check"
+              ><img src="./public/menu-white.png" alt="" width="50px"
+            /></label>
+            <div class="menu">
+              <ul>
+                <li class="active"><a href="./index.html">Популярные</a></li>
+                <li><a href="./catalog.html">Каталог</a></li>
+                <li><a href="./reg.html">Войти</a></li>
+                <li><a href="./profil.html">Личный кабинет</a></li>
+                <li><a href="./main-light.html">Светлая</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -37,7 +52,7 @@
         <h1>Страница стримера</h1>
         <div class="strimer-container">
           <div class="avatar">
-            <img src="/public/strimer-info/avatar/strimer.webp" alt="" />
+            <img src="./public/strimer-info/avatar/strimer.webp" alt="" />
           </div>
           <div class="description">
             <div class="nik-sub">
@@ -71,7 +86,7 @@
     <!-- подвал -->
     <section class="feadback gradient">
       <div class="container">
-        <div class="flex">
+        <div class="flex feadback-flex">
           <div class="flex-box">
             <h4>Телефон:</h4>
             <p>8-800-555-44-33</p>
