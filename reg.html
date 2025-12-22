@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/reg.css" />
+    <title>Stream Hub</title>
+  </head>
+  <body>
+    <!-- шапка  -->
+    <header class="gradient">
+      <div class="container">
+        <div class="flex">
+          <div class="logo">
+            <img
+              width="50px"
+              height="50px"
+              src="public/icon_white.png"
+              alt="logo" />
+          </div>
+          <nav>
+            <ul>
+              <li><a href="/main.html">Популярные</a></li>
+              <li><a href="/catalog.html">Каталог</a></li>
+              <li class="active"><a href="/reg.html">Войти</a></li>
+              <li><a href="/profil.html">Личный кабинет</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- регистрация -->
+    <section class="gradient">
+      <div class="container registration">
+        <h1>Регистрация</h1>
+        <form action="" class="registration-form">
+          <div class="pole">
+            <div class="label"><label for="e-mail">Почта</label></div>
+            <input type="email" required />
+          </div>
+          <div class="pole">
+            <div class="label"><label for="name">Имя</label></div>
+            <input type="text" required />
+          </div>
+
+          <div class="pole">
+            <div class="label"><label for="nickname">Ник</label></div>
+            <input type="text" required />
+          </div>
+
+          <div class="pole">
+            <div class="label"><label for="bithday">Дата рождения</label></div>
+            <input type="date" required />
+          </div>
+
+          <div class="pole">
+            <div class="label"><label for="phone">Номер телефона</label></div>
+            <input type="tel" required />
+          </div>
+
+          <div class="pole">
+            <div class="label"><label for="password">Пароль</label></div>
+            <input type="password" required />
+          </div>
+
+          <div class="pole">
+            <div class="label"><label for="password">Повтор пароля</label></div>
+            <input type="password" required />
+            <div class="checkbox">
+              <input type="checkbox" required />
+              <p class="ps">Cогласие на обработку персональных данных</p>
+            </div>
+          </div>
+          <div class="pole">
+            <button class="btn reg-btn">Зарегестрироваться</button>
+          </div>
+          <div class="pole login">
+            <a href="/login.html">У вас уже есть аккаунт?</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- подвал -->
+    <section class="feadback gradient">
+      <div class="container">
+        <div class="flex">
+          <div class="flex-box">
+            <h4>Телефон:</h4>
+            <p>8-800-555-44-33</p>
+          </div>
+          <div class="flex-box">
+            <h4>E-mail:</h4>
+            <p>support@streamhub.ru</p>
+          </div>
+          <div class="flex-box">
+            <ul>
+              <li>Пользователям</li>
+              <li>Стримерам</li>
+              <li>О платформе</li>
+              <li>Контакты</li>
+            </ul>
+          </div>
+          <div class="flex-box">
+            <h4>Навигация по сайту</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <title>Stream Hub</title>
+  </head>
+  <body>
+    <!-- шапка  -->
+    <header class="gradient">
+      <div class="container">
+        <div class="flex">
+          <div class="logo">
+            <img
+              width="50px"
+              height="50px"
+              src="public/icon_white.png"
+              alt="logo" />
+          </div>
+          <nav>
+            <ul>
+              <li><a href="/main.html">Популярные</a></li>
+              <li><a href="/catalog.html">Каталог</a></li>
+              <li class="active"><a href="/reg.html">Войти</a></li>
+              <li><a href="/profil.html">Личный кабинет</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Авторизация -->
+    <section class="avtorithathion gradient">
+      <div class="container">
+        <h1>Вход в личный кабинет</h1>
+        <input type="checkbox" id="modal-toggle" class="modal-logic" />
+        <form action="">
+          <div class="pole">
+            <label for="login">Введите логин:</label>
+            <input type="text" />
+          </div>
+
+          <div class="pole">
+            <label for="password">Введите пароль:</label>
+            <input type="password" />
+          </div>
+          <div class="pole">
+            <label for="modal-toggle" class="loos-pas">Забыл пароль</label>
+          </div>
+
+          <div class="pole"><button class="btn">Войти</button></div>
+        </form>
+
+        <div class="custom-modal">
+          <div class="modal-content">
+            <h2>Востановить пароль</h2>
+            <label for="email">Введите вашу почту</label>
+            <input type="email" placeholder="Email" required />
+            <div class="modal-btn">
+              <div class="pole">
+                <button type="submit" class="btn">Отправить</button>
+
+                <label for="modal-toggle" class="btn-close">Закрыть</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- подвал -->
+    <section class="feadback gradient">
+      <div class="container">
+        <div class="flex">
+          <div class="flex-box">
+            <h4>Телефон:</h4>
+            <p>8-800-555-44-33</p>
+          </div>
+          <div class="flex-box">
+            <h4>E-mail:</h4>
+            <p>support@streamhub.ru</p>
+          </div>
+          <div class="flex-box">
+            <ul>
+              <li>Пользователям</li>
+              <li>Стримерам</li>
+              <li>О платформе</li>
+              <li>Контакты</li>
+            </ul>
+          </div>
+          <div class="flex-box">
+            <h4>Навигация по сайту</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

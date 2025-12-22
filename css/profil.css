@@ -1,0 +1,62 @@
+h1{
+    margin-left: 50px;
+}
+.information{
+    margin-left: 50px;
+}
+.profil-inf, .history{
+    background: #e3e3e39a;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 900px;
+    max-width: 80%;
+}
+.profil{
+    display: flex;
+    justify-content: space-between;
+}
+
+.seating{
+    text-align: right;
+    padding-inline: 30px;
+    background: #e3e3e39a;
+}
+
+.pole input{
+    width: 90%;
+}
+
+.modal-window{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 70%;
+    z-index: 999;
+    background: #e3e3e3e0;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    flex-direction: column;
+    padding: 25px;
+}
+#modal-check{
+    display: none;
+}
+
+#modal-check:checked ~ .modal-window{
+    display: flex;
+}
+
+ol{
+    padding-left: 40px;
+}
+
+ol li{
+    font-size: 1.5rem;
+}
+ol li p strong, p{
+    padding-inline: 15px;
+}

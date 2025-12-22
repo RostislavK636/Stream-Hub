@@ -1,0 +1,43 @@
+h1{
+    color: aliceblue;
+}
+.strimer-section {
+    font-size: 1.2rem;
+    background: url('/public/strimer-info/cover/cover-am.jpg') no-repeat center / cover;
+}
+
+.strimer-container{
+    display: flex;
+    margin-block: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    background: rgba(208, 208, 208, 0.642);
+}
+
+.avatar-nick{
+    width: 30%;
+}
+
+.description{
+    padding-left: 20px;
+    width: 70%;
+}
+
+.nik-sub{
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    width: 20%;
+    height: 40px;
+    margin-right: 2rem;
+}
+
+.history{
+    padding: 20px;
+    background: rgba(208, 208, 208, 0.642);
+}
+
+.history ol{
+    padding-inline: 20px;
+}

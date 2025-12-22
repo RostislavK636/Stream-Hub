@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  border: none;
+}
+
+h1{
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  padding-block: 30px;
+}
+
+h2, h3, h4, h5, h6{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style:normal;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+img{
+    max-width: 100%;
+}
+
+.gradient {
+    background: #34c2b1;
+    background: radial-gradient(circle,rgba(52, 194, 177, 1) 0%, rgba(145, 193, 193, 0.87) 100%);
+    /* background: #aeeee8;
+    background: radial-gradient(circle,rgba(174, 238, 232, 1) 0%, rgba(148, 169, 233, 1) 100%); */
+}
+
+.btn, input{
+    background: #00FFD4;
+    border: 1px solid #666666;
+    border-radius: 10px;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    padding-block: 50px;
+    margin: 0 auto;
+}
+
+
+
+/* Шапка */
+header .container{
+    padding-block: 0;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 10px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+ul .active{
+    border-bottom: 3px solid #00ffd5;
+    border-radius: 5px;
+}
+
+
+/* Быстрый поиск */
+input {
+    flex: 1;             
+    height: 45px;
+    padding: 0 15px;       
+    box-sizing: border-box;
+}
+.search {
+    display: flex;         
+    gap: 10px;             
+    align-items: center;
+}
+.search .btn {
+    height: 45px;
+    padding: 0 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+
+/* Преимущества платформы */
+.prefe-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.prefe{
+    background: #dddddd8d;
+    width: 400px;
+    text-align: center;
+    margin: 50px;
+    border-radius: 50px;
+    padding-block: 30px;
+}
+
+.prefe .img{
+    width: 50px;
+    height: 50px;
+}
+
+.prefe h4{
+    font-size: 1.5rem;
+}
+
+/* Популярные категории */
+.categories{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.card-categories{
+    text-align: center;
+    width: 300px;
+    background: #dddddd8d;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.card-categories img{
+    border-radius: 20px;}
+
+
+
+/* Партнёры  */
+.par-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    padding-block: 10px;
+    gap: 20px;
+}
+.par img{
+    max-width: 200px;
+    object-fit: cover;
+}
+
+.img-class{
+    height: 200px;
+}
+
+
+/* Подвал */
+.feadback .container{
+    padding-block: 0;
+}
+.flex-box ul{
+    list-style: none;
+    padding: 15px;
+}

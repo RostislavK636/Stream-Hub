@@ -1,0 +1,38 @@
+.registration{
+    text-align: center;
+}
+
+.registration-form{
+    text-align: center;
+}
+
+.pole{
+    margin-bottom: 20px;
+}
+
+.label{
+    text-align: left;
+    margin-left: 34%;
+}
+
+input{
+    width: 25rem;
+}
+
+.checkbox{
+    margin-top: 5px;
+}
+.checkbox input{
+    width: 1rem;
+    height: 15px;
+}
+.checkbox p{
+    display: inline;
+}
+
+.reg-btn{
+    width: 50%;
+    height: 40px;
+    font-weight: 300;
+    font-size: 1.3rem;
+}

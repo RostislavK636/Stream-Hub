@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Stream Hub</title>
+  </head>
+  <body>
+    <!-- шапка  -->
+    <header class="gradient">
+      <div class="container">
+        <div class="flex">
+          <div class="logo">
+            <img
+              width="50px"
+              height="50px"
+              src="public/icon_white.png"
+              alt="logo" />
+          </div>
+          <nav>
+            <ul>
+              <li class="active"><a href="/main.html">Популярные</a></li>
+              <li><a href="/catalog.html">Каталог</a></li>
+              <li><a href="/reg.html">Войти</a></li>
+              <li><a href="/profil.html">Личный кабинет</a></li>
+              <li><a href="/main-light.html">Светлая</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- слайдер это фиаско -->
+    <!-- <div class="container">
+      <div class="slider"></div>
+    </div> -->
+
+    <!-- поиск -->
+    <section class="search-section gradient">
+      <div class="container">
+        <h1>Быстрый поиск</h1>
+        <div class="search">
+          <input
+            type="text"
+            list="search-hints"
+            placeholder="Что вы ищите?"
+            class="search-input" />
+          <datalist id="search-hints">
+            <option value="Спорт"></option>
+            <option value="Борьба"></option>
+            <option value="Образование"></option>
+            <option value="Интервью"></option>
+            <option value="Мотивация"></option>
+          </datalist>
+
+          <button class="btn">Поиск</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="preference gradient">
+      <div class="container">
+        <h1>Преимущества</h1>
+        <div class="prefe-group">
+          <div class="prefe">
+            <img src="public/prefe/chat.png" alt="" />
+            <h4>Удобный чат</h4>
+          </div>
+
+          <div class="prefe">
+            <img src="public/prefe/donat.png" alt="" />
+            <h4>Безопасные донаты</h4>
+          </div>
+
+          <div class="prefe">
+            <img src="public/prefe/garant.png" alt="" />
+            <h4>Поддержка стримеров</h4>
+          </div>
+
+          <div class="prefe">
+            <img src="public/prefe/hd.png" alt="" />
+            <h4>Высокое качество трансляций</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- популярные категории -->
+    <section class="popular_categories gradient">
+      <div class="container">
+        <h1>Популярные категории</h1>
+        <div class="categories">
+          <!-- Клик по карточке ведёт в каталог -->
+          <a href="/catalog.html">
+            <div class="card-categories">
+              <img src="public/popular_categories/education.png" alt="" />
+              <h3>Обычение</h3>
+              <p><strong>Активных: </strong>25</p>
+            </div>
+          </a>
+
+          <a href="/catalog.html">
+            <div class="card-categories">
+              <img src="public/popular_categories/game.png" alt="" />
+              <h3>Игры</h3>
+              <p><strong>Активных: </strong>25</p>
+            </div>
+          </a>
+
+          <a href="/catalog.html">
+            <div class="card-categories">
+              <img src="public/popular_categories/interview.png" alt="" />
+              <h3>Интервью</h3>
+              <p><strong>Активных: </strong>25</p>
+            </div>
+          </a>
+
+          <a href="/catalog.html">
+            <div class="card-categories">
+              <img src="public/popular_categories/motivation.png" alt="" />
+              <h3>Мотивация</h3>
+              <p><strong>Активных: </strong>25</p>
+            </div>
+          </a>
+
+          <a href="/catalog.html">
+            <div class="card-categories">
+              <img src="public/popular_categories/sport.png" alt="" />
+              <h3>Спорт</h3>
+              <p><strong>Активных: </strong>25</p>
+            </div>
+          </a>
+
+          <a href="/catalog.html">
+            <div class="card-categories">
+              <img src="public/popular_categories/wrestling.png" alt="" />
+              <h3>Борьба</h3>
+              <p><strong>Активных: </strong>25</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- пратнеры -->
+    <section class="partner gradient">
+      <div class="container">
+        <h1>Партнеры</h1>
+        <div class="par-flex">
+          <div class="par">
+            <h2>Alibaba</h2>
+            <div class="img-class">
+              <img src="public/partner/alibaba.png" alt="partner 1" />
+            </div>
+          </div>
+          <div class="par">
+            <h2>Axelbolt</h2>
+            <div class="img-class">
+              <img src="public/partner/axelbolt.jpg" alt="partner 2" />
+            </div>
+          </div>
+          <div class="par">
+            <h2>Rostic`s</h2>
+            <div class="img-class">
+              <img src="public/partner/rostics.png" alt="partner 3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- подвал -->
+    <section class="feadback gradient">
+      <div class="container">
+        <div class="flex">
+          <div class="flex-box">
+            <h4>Телефон:</h4>
+            <p>8-800-555-44-33</p>
+          </div>
+          <div class="flex-box">
+            <h4>E-mail:</h4>
+            <p>support@streamhub.ru</p>
+          </div>
+          <div class="flex-box">
+            <ul>
+              <li>Пользователям</li>
+              <li>Стримерам</li>
+              <li>О платформе</li>
+              <li>Контакты</li>
+            </ul>
+          </div>
+          <div class="flex-box">
+            <h4>Навигация по сайту</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

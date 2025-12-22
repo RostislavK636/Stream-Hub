@@ -1,0 +1,55 @@
+.section-filter{
+    display: flex;
+    min-height: 700px;
+}
+.filter{
+    width: 300px;
+    margin-inline: 20px;
+    padding-right: 40px;
+    border-right: 2px solid #cfcfcf89;
+    margin-top: 50px;
+}
+
+.filter ul{
+    list-style: none;
+}
+
+input{
+    display: none;
+} 
+
+.filter li{
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.filter li:hover{
+    font-weight: 600;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: none;
+    max-width: 250px;
+    text-align: center;
+    background: #cfcfcf89;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 25px;
+}
+.watch-btn{
+    width: 90%;
+    border: none;
+}
+
+#all:checked ~ .container .cards .card {
+    display: block; 
+}
+#motivation:checked ~ .container .cards .card.motivation {
+    display: block;
+}
+

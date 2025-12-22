@@ -1,0 +1,51 @@
+.avtorithathion{
+    text-align: center;
+    padding-block: 100px;
+}
+
+.pole{
+    margin-block: 30px;
+}
+
+form a{
+    margin: -30px;
+}
+
+.loos-pas{
+    border: none;
+    background: none;
+}
+
+.pole .btn{
+    font-size: 1.2rem;
+    width: 30%;
+    height: 30px;
+}
+
+.modal-logic{
+    display: none;
+}
+
+.custom-modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-logic:checked ~ .custom-modal{
+    display: flex;
+}
+
+.modal-content{
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 400px;
+    width: 90%;
+}
