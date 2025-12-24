@@ -9,7 +9,11 @@ body{
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   border: none;
+    min-height: 100vh;  /* ⭐ САМАЯ ВАЖНАЯ СТРОЧКА */
+    display: flex;              /* ⭐ Включаем Flexbox */
+    flex-direction: column; 
 }
+
 
 h1{
   font-family: "Poppins", sans-serif;
@@ -34,6 +38,7 @@ img{
 }
 
 .gradient {
+    flex: 1;
     background: #34c2b1;
     background: radial-gradient(circle,rgba(52, 194, 177, 1) 0%, rgba(36, 61, 61, 0.87) 100%);
     /* background: #aeeee8;
@@ -44,9 +49,11 @@ img{
     background: #00FFD4;
     border: 1px solid #666666;
     border-radius: 10px;
+    height: 40px;
 }
 
 .container{
+    
     max-width: 1200px;
     width: 100%;
     padding-block: 50px;
@@ -118,6 +125,83 @@ ul .active{
     }
 }
 
+/* слайдер */
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.slider-container input[type="radio"] {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    width: 33.333%;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.avatar {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.slide h3 {
+    margin: 10px 0;
+}
+
+.slide p {
+    margin: 5px 0;
+}
+
+#slide1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-33.333%);
+}
+
+#slide3:checked ~ .slides {
+    transform: translateX(-66.666%);
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    background: #ddd;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition:  0.3s;
+}
+
+#slide1:checked ~ .indicators .indicator:nth-child(1),
+#slide2:checked ~ .indicators .indicator:nth-child(2),
+#slide3:checked ~ .indicators .indicator:nth-child(3) {
+    background: #00FFD4;
+}
 
 
 /* Быстрый поиск */
@@ -138,10 +222,7 @@ input {
     font-size: 1.2rem;
     cursor: pointer;
 }
-
-
-
-/* Преимущества платформы */
+/* Преимущества */
 .prefe-group{
     display: flex;
     flex-wrap: wrap;
@@ -208,7 +289,11 @@ input {
 
 
 /* Подвал */
+.feadback{
+    margin-top: auto;
+}
 .feadback .container{
+    margin-top: auto;
     padding-block: 0;
 }
 .flex-box ul{

@@ -46,10 +46,56 @@
       </div>
     </header>
 
-    <!-- слайдер это фиаско -->
-    <!-- <div class="container">
-      <div class="slider"></div>
-    </div> -->
+    <!-- слайдер -->
+    <section class="slider gradient">
+      <div class="container">
+        <h1>Популярные стримы</h1>
+        <div class="slider-container">
+          <input type="radio" name="slider" id="slide1" checked />
+          <input type="radio" name="slider" id="slide2" />
+          <input type="radio" name="slider" id="slide3" />
+
+          <div class="slides">
+            <div class="slide">
+              <img
+                src="./public/strimer-info/avatar/arsen.webp"
+                alt="Аватар стримера"
+                class="avatar" />
+              <h3>Arsen</h3>
+              <p>Категория: Игры</p>
+              <p>Зрителей: 1500</p>
+              <a href="./strimers/arsen.html" class="btn">Перейти</a>
+            </div>
+            <div class="slide">
+              <img
+                src="./public/strimer-info/avatar/grebenuk.jpg"
+                alt="Аватар стримера"
+                class="avatar" />
+              <h3>Streamer2</h3>
+              <p>Категория: Спорт</p>
+              <p>Зрителей: 1200</p>
+              <a href="./strimers/arsen.html" class="btn">Перейти</a>
+            </div>
+            <div class="slide">
+              <img
+                src="./public/strimer-info/avatar/teit.jpg"
+                alt="Аватар стримера"
+                class="avatar" />
+              <h3>Streamer3</h3>
+              <p>Категория: Образование</p>
+              <p>Зрителей: 800</p>
+              <a href="./strimers/arsen.html" class="btn">Перейти</a>
+            </div>
+          </div>
+
+          <div class="indicators">
+            <label for="slide1" class="indicator active"></label>
+            <label for="slide2" class="indicator"></label>
+            <label for="slide3" class="indicator"></label>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- поиск -->
     <section class="search-section gradient">
@@ -69,7 +115,7 @@
             <option value="Мотивация"></option>
           </datalist>
 
-          <button class="btn">Поиск</button>
+          <a href="catalog.html" class="btn">Поиск</a>
         </div>
       </div>
     </section>
